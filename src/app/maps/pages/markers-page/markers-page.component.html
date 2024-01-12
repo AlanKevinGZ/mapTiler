@@ -1,0 +1,17 @@
+<div class="map-wrap">
+    <a href="https://www.maptiler.com" class="watermark"><img
+        src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"/></a>
+    <div class="map" #map></div>
+  </div>
+
+
+ <ul class="list-group">
+    <li class="list-group-item" *ngFor="let markker of markerts;let i=index" [ngStyle]="{'background-color': markker.color}" 
+    (dblclick)="deleteMrkert(i)" (click)="flyTo(markker.marker)">
+      Marker  {{i+1}}
+    </li>
+</ul>
+
+<button (click)="createMartet()">Agregar marcador</button>
+
+ 
