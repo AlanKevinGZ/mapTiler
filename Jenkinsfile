@@ -12,6 +12,10 @@ pipeline{
                 bat 'npm install'
             }
 
+        }
+
+         stage("Run server angular"){
+            
             steps{
                 
                 bat 'ng s'
