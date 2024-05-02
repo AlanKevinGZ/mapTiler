@@ -14,11 +14,11 @@ pipeline{
 
         }
 
-         stage("Run server angular"){
+         stage("Ready to used"){
             
             steps{
                 
-                bat 'ng s'
+                echo 'ng s'
             }
             
         }
